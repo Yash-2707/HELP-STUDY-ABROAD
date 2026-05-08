@@ -263,9 +263,13 @@ export function Navbar() {
                     {item.icon}
                     <ListItemText
                       primary={item.label}
-                      primaryTypographyProps={{
-                        fontSize: '14px',
-                        fontWeight: 600,
+                      slotProps={{
+                        primary: {
+                          sx: {
+                            fontSize: '14px',
+                            fontWeight: 600,
+                          },
+                        },
                       }}
                     />
                   </Box>
